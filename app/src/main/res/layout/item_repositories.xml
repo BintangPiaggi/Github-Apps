@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ttName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Bintang Piaggi"
+        app:layout_constraintStart_toEndOf="@id/ttName"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ttUrl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ttName"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/url"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Bintang Piaggi"
+        app:layout_constraintStart_toEndOf="@id/ttUrl"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ttOwner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ttUrl"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/owner"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintTop_toBottomOf="@id/tvUrl"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Bintang Piaggi"
+        app:layout_constraintStart_toEndOf="@id/ttOwner"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
